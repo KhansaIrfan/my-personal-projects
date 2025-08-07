@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Heebo", sans-serif;
+
+}
+
+div {
+  background-color: #D6E1F0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card {
+  height: 472px;
+  width: 30%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+figcaption {
+  text-align: center;
+  font-weight: 900;
+  margin-top: 20px;
+  width: 272px;
+  height: 52px;
+  font-size: 21px;
+}
+
+p {
+  margin-top: 21px;
+  color: #68778d;
+  font-weight: 500;
+  text-align: center;
+  width: 272px;
+}
+
+
+@media screen and (min-width: 425px) {
+
+  .card {
+    height: 430px;
+    width: 46%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+}
+
+
+
+
+@media screen and (min-width: 576px) {
+  .card {
+    height: 430px;
+    width: 46%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .card {
+    height: 589px;
+    width: 35%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  p {
+    margin-top: 28px;
+    color: #68778d;
+    font-weight: 500;
+    text-align: center;
+    width: 272px;
+    margin-bottom: 51px;
+}
+}
+
+
+@media screen and (min-width:1366px) {
+  .card {
+    height: 690px;
+  }
+
+
+  figcaption {
+    text-align: center;
+    font-weight: 900;
+    margin-top: 20px;
+    width: 314px;
+    height: 52px;
+    font-size: 26px;
+  }
+
+  p {
+    margin-top: 39px;
+    color: #68778d;
+    font-weight: 500;
+    text-align: center;
+    width: 312px;
+    font-size: 20px;
+  }
+
+}
+
+@media screen and (min-width:1920px) {
+  .card {
+    height: 65%;
+    width: 35%;
+}
+
+    figcaption {
+        text-align: center;
+        font-weight: 900;
+        margin-top: 20px;
+        width: 90%;
+        height: 52px;
+        font-size: 34px;
+    }
+
+    p {
+      margin-top: 62px;
+      color: #68778d;
+      font-weight: 500;
+      text-align: center;
+      width: 503px;
+      font-size: 27px;
+  }
+}
