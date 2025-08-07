@@ -3,22 +3,24 @@
   padding: 0;
 }
 
+html,
 body {
   font-family: "Heebo", sans-serif;
-
+  height: 100%;
 }
 
-div {
+.background {
+  padding: 30px;
   background-color: #D6E1F0;
-  height: 100vh;
+  height: -webkit-fill-available;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  /* position: relative; */
 }
 
 .card {
-  height: 472px;
+  height: 72px;
   width: 30%;
   background-color: #fff;
   border-radius: 10px;
@@ -64,7 +66,7 @@ p {
     border-radius: 10px;
     padding: 20px;
   }
-  
+
 }
 
 
@@ -81,13 +83,23 @@ p {
 }
 
 @media screen and (min-width:768px) {
+  .background {
+    padding: 30px;
+    background-color: #D6E1F0;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .card {
-    height: 589px;
+    height: 432px;
     width: 35%;
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
   }
+
   p {
     margin-top: 28px;
     color: #68778d;
@@ -95,9 +107,18 @@ p {
     text-align: center;
     width: 272px;
     margin-bottom: 51px;
-}
+  }
 }
 
+@media screen and (min-width:1024px) {
+  .card {
+    height: 514px;
+    width: 35%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+  }
+}
 
 @media screen and (min-width:1366px) {
   .card {
@@ -116,6 +137,7 @@ p {
 
   p {
     margin-top: 39px;
+    margin-bottom: 0px;
     color: #68778d;
     font-weight: 500;
     text-align: center;
@@ -127,25 +149,57 @@ p {
 
 @media screen and (min-width:1920px) {
   .card {
-    height: 65%;
-    width: 35%;
+    height: 73%;
+    width: 25%;
+  }
+
+  figcaption {
+    text-align: center;
+    font-weight: 900;
+    margin-top: 20px;
+    width: 90%;
+    height: 52px;
+    font-size: 34px;
+  }
+
+  p {
+    margin-top: 62px;
+    color: #68778d;
+    font-weight: 500;
+    text-align: center;
+    width: 473px;
+    font-size: 27px;
+  }
+
+  .background {
+    padding: 30px;
+    background-color: #D6E1F0;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card img {
+    width: 96%;
+    border-radius: 10px;
+  }
 }
 
-    figcaption {
-        text-align: center;
-        font-weight: 900;
-        margin-top: 20px;
-        width: 90%;
-        height: 52px;
-        font-size: 34px;
-    }
+@media screen and (min-width: 2560px) {
+  /* Styles specifically for MacBook Air M1 */
 
-    p {
-      margin-top: 62px;
-      color: #68778d;
-      font-weight: 500;
-      text-align: center;
-      width: 503px;
-      font-size: 27px;
+  .background {
+    background-color: #D6E1F0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .card {
+    height: 49%;
+    max-width: 400px;
   }
 }
